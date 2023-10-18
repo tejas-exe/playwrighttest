@@ -77,14 +77,16 @@ test.describe("Home", () => {
 
     await page
       .locator("#evf-277-field_ys0GeZISRs-1")
-      .fill(faker.name.firstName());
+      .fill(faker.person.firstName());
     await page
       .locator("#evf-277-field_LbH5NxasXM-2")
       .fill(faker.internet.email());
     await page
       .locator("#evf-277-field_66FR384cge-3")
       .fill(faker.phone.number());
-    await page.locator("#evf-277-field_yhGx3FOwr2-4").fill(faker.lorem.paragraphs(2));
+    await page
+      .locator("#evf-277-field_yhGx3FOwr2-4")
+      .fill(faker.lorem.paragraphs(2));
     page.locator("#evf-submit-277").click();
 
     const greenLine = page.locator(

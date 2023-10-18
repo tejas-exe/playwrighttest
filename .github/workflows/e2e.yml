@@ -14,4 +14,4 @@ jobs:
       - name: Install Playwright
         run: npx playwright install --with-deps
       - name: Run your tests
-        run: npx playwright test tests-examples/home.spec.ts
+        run: npx playwright test tests-examples/Authencation.spec.ts
